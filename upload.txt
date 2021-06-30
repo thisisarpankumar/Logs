@@ -1,2 +1,81 @@
-this is a sample text one.
-this is a sample text two.
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials
+$ git clone https://github.com/thisisarpankumar/test.git
+Cloning into 'test'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials
+$ ls
+test/  upload.txt
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials
+$ cd test/
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/test (main)
+$ ..
+bash: ..: command not found
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/test (main)
+$ cd ..
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials
+$ cd test
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/test (main)
+$ git init -b main
+warning: re-init: ignored --initial-branch=main
+Reinitialized existing Git repository in F:/My_Source_codes/Git/GitTutorials/test/.git/
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/test (main)
+$ git add .
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/test (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   upload.txt
+
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/test (main)
+$ git log
+commit cb7e4df2f7eb7159e4ee1c1b434e1d7729477119 (HEAD -> main, origin/main, origin/HEAD)
+Author: Arpan Kumar <arpankumar007@outlook.com>
+Date:   Tue Jun 29 17:30:09 2021 +0530
+
+    Initial commit
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/test (main)
+$ git config --global user.name "thisisarpankumar"
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/test (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   upload.txt
+
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/test (main)
+$ git log
+commit cb7e4df2f7eb7159e4ee1c1b434e1d7729477119 (HEAD -> main, origin/main, origin/HEAD)
+Author: Arpan Kumar <arpankumar007@outlook.com>
+Date:   Tue Jun 29 17:30:09 2021 +0530
+
+    Initial commit
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/test (main)
+$ git commit -m "Hindi Med"
+[main e7e8d94] Hindi Med
+ 1 file changed, 2 insertions(+)
+ create mode 100644 upload.txt
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/test (main)
+$ git push origin main
